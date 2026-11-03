@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Speed Dial for Chrome shortcut with AI Customizer",
+  "version": "4.0",
+  "description": "Configure your new tab page with responsive shortcut capsule grids, dynamic visible scroll engines, and an AI customizer style dashboard.",
+  "chrome_url_overrides": {
+    "newtab": "newtab.html"
+  },
+  "permissions": [
+    "storage"
+  ],
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  }
+}

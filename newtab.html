@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Workspace Speed Dial</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- AI Customizer Sidebar Panel -->
+  <div id="sue-panel" class="sidebar">
+    <h2>✨ AI Customizer</h2>
+    <label>Global Canvas Style:</label>
+    <select id="theme-selector">
+      <option value="glassmorphism" selected>Futuristic Glass</option>
+      <option value="cyberpunk">Neon Cyberpunk</option>
+      <option value="minimalist">Stealth Matte Black</option>
+    </select>
+    
+    <label>Global Transparency:</label>
+    <input type="range" id="opacity-slider" min="10" max="100" value="65">
+
+    <label>Global Wallpaper URL:</label>
+    <input type="text" id="bg-url-input" placeholder="Paste image link...">
+    <button id="apply-bg-btn">Apply Canvas Image</button>
+
+    <!-- Donation Support Section -->
+    <div class="donation-section">
+      <p>Love this extension?</p>
+      <button id="donate-btn" class="support-btn">❤️ Support Creator</button>
+    </div>
+  </div>
+
+  <button id="toggle-sue-btn">⚙️ AI Customizer</button>
+
+  <!-- Futuristic Mechanical Analog Clock Overlay -->
+  <div class="dashboard-center">
+    <div class="clock-container">
+      <div class="analog-clock">
+        <div class="hand hour-hand" id="hour-hand"></div>
+        <div class="hand minute-hand" id="minute-hand"></div>
+        <div class="hand second-hand" id="second-hand"></div>
+        <div class="center-dot"></div>
+      </div>
+      <div id="live-clock">00:00:00</div>
+    </div>
+    <div id="greeting">System Initialization...</div>
+    
+    <form action="https://google.com" method="GET" class="search-form">
+      <input type="text" name="q" placeholder="Explore the stream..." autocomplete="off" required>
+      <button type="submit">🔍</button>
+    </form>
+  </div>
+
+  <header>
+    <button id="add-group-btn" class="main-btn">+ Initialize New Capsule</button>
+  </header>
+
+  <!-- Multi-Row Dynamic Capsule Grid -->
+  <main id="groups-container">
+    <!-- Orbital capsules inject here dynamically -->
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
